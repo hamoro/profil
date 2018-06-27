@@ -192,12 +192,7 @@ message.channel.send({embed});
 });
 
 
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`「.🔱 Welcome TO Kingdom Shop 🔱.」 ${member} `) 
-}).catch(console.error)
 
-});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
